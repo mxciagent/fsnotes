@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Install Pods') {
+      steps {
+        sh 'pod install'
+      }
+    }
+
   }
 }
